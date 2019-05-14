@@ -15,6 +15,7 @@ import {
   EditListingFeaturesPanel,
   EditListingLocationPanel,
   EditListingPhotosPanel,
+  EditListingDifficultyPanel,
   EditListingPoliciesPanel,
   EditListingPricingPanel,
 } from '../../components';
@@ -24,6 +25,7 @@ import css from './EditListingWizard.css';
 export const AVAILABILITY = 'availability';
 export const DESCRIPTION = 'description';
 export const FEATURES = 'features';
+export const DIFFICULTY = 'difficulty';
 export const POLICY = 'policy';
 export const LOCATION = 'location';
 export const PRICING = 'pricing';
@@ -33,6 +35,7 @@ export const PHOTOS = 'photos';
 export const SUPPORTED_TABS = [
   DESCRIPTION,
   FEATURES,
+  DIFFICULTY,
   POLICY,
   LOCATION,
   PRICING,
@@ -161,6 +164,20 @@ const EditListingWizardTab = props => {
       return (
         <EditListingDescriptionPanel
           {...panelProps(DESCRIPTION)}
+          submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
+          onSubmit={values => {
+            onCompleteEditListingWizardTab(tab, values);
+          }}
+        />
+      );
+    }
+    case DIFFICULTY: {
+      const submitButtonTranslationKey = isNewListingFlow
+        ? 'EditListingWizard.saveNewDifficulty'
+        : 'EditListingWizard.saveEditDifficulty';
+      return (
+        <EditListingDifficultyPanel
+          {...panelProps(DIFFICULTY)}
           submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
           onSubmit={values => {
             onCompleteEditListingWizardTab(tab, values);

@@ -8,9 +8,9 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.css';
 
-import helsinkiImage from './images/location_helsinki.jpg';
-import rovaniemiImage from './images/location_rovaniemi.jpg';
-import rukaImage from './images/location_ruka.jpg';
+import skiingImage from './images/skiing.jpg';
+import moabImage from './images/moab.jpg';
+import oregonImage from './images/oregon.jpg';
 
 class LocationImage extends Component {
   render() {
@@ -58,12 +58,12 @@ const SectionLocations = props => {
         {locationLink(
           'Hiking in Utah',
           moabImage,
-          '?address=Rovaniemi%2C%20Finland&bounds=67.18452510000002%2C27.32667850000007%2C66.1553745%2C24.736871199999996&origin=66.50394779999999%2C25.729390599999988'
+          '?address=Moab%2C%20Utah&bounds=39.81604346%2C-109.05985351%2C37.14254407%2C-111.66557235&origin=66.50394779999999%2C25.729390599999988'
         )}
         {locationLink(
           'Mountain biking in Oregon',
           oregonImage,
-          '?address=Ruka%2C%20Finland&bounds=66.1704578%2C29.14246849999995%2C66.1614402%2C29.110453699999994&origin=66.16594940000002%2C29.12646110000003'
+          '?address=Bend%2C%20Oregon&bounds=bounds=46.49806133%2C-119.22018713%2C41.59176486%2C-124.43162482&origin=66.16594940000002%2C29.12646110000003'
         )}
       </div>
     </div>

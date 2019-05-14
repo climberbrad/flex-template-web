@@ -4,43 +4,39 @@
 
 export const amenities = [
   {
-    key: 'towels',
-    label: 'Towels',
+    key: '1_hr',
+    label: 'One Hour',
   },
   {
-    key: 'bathroom',
-    label: 'Bathroom',
+    key: '2_hr',
+    label: 'Two Hours',
   },
   {
-    key: 'swimming_pool',
-    label: 'Swimming pool',
+    key: '3_hr',
+    label: 'Three Hours',
   },
   {
-    key: 'own_drinks',
-    label: 'Own drinks allowed',
+    key: '4_hr',
+    label: 'Four Hours',
   },
   {
-    key: 'jacuzzi',
-    label: 'Jacuzzi',
+    key: 'half_day',
+    label: 'Half Day',
   },
   {
-    key: 'audiovisual_entertainment',
-    label: 'Audiovisual entertainment',
-  },
-  {
-    key: 'barbeque',
-    label: 'Barbeque',
-  },
-  {
-    key: 'own_food_allowed',
-    label: 'Own food allowed',
+    key: 'full_day',
+    label: 'Full Day',
   },
 ];
 
 export const categories = [
-  { key: 'smoke', label: 'Smoke' },
-  { key: 'electric', label: 'Electric' },
-  { key: 'wood', label: 'Wood' },
+  { key: 'skiing', label: 'Skiing' },
+  { key: 'snowboarding', label: 'Snowboarding' },
+  { key: 'hiking', label: 'Hiking' },
+  { key: 'climbing', label: 'Climbing' },
+  { key: 'biking', label: 'Biking' },
+  { key: 'surfing', label: 'Surfing' },
+  { key: 'trek', label: 'Trekking' },
   { key: 'other', label: 'Other' },
 ];
 
@@ -56,3 +52,10 @@ export const priceFilterConfig = {
 export const dateRangeFilterConfig = {
   active: true,
 };
+
+export const difficulty = [
+  { key: 'novice', label : 'Novice'},
+  { key: 'beginner', label : 'Beginner'},
+  { key: 'moderate', label : 'Moderate'},
+  { key: 'advanced', label : 'Advanced'},
+];

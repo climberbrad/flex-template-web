@@ -21,6 +21,7 @@ import EditListingWizardTab, {
   POLICY,
   LOCATION,
   PRICING,
+  DIFFICULTY,
   PHOTOS,
 } from './EditListingWizardTab';
 import css from './EditListingWizard.css';
@@ -33,6 +34,7 @@ const availabilityMaybe = config.enableAvailability ? [AVAILABILITY] : [];
 export const TABS = [
   DESCRIPTION,
   FEATURES,
+  DIFFICULTY,
   POLICY,
   LOCATION,
   PRICING,
@@ -49,6 +51,8 @@ const tabLabel = (intl, tab) => {
     key = 'EditListingWizard.tabLabelDescription';
   } else if (tab === FEATURES) {
     key = 'EditListingWizard.tabLabelFeatures';
+  } else if (tab === DIFFICULTY) {
+    key = 'EditListingWizard.tabLabelDifficulty';
   } else if (tab === POLICY) {
     key = 'EditListingWizard.tabLabelPolicy';
   } else if (tab === LOCATION) {
@@ -98,6 +102,8 @@ const tabCompleted = (tab, listing) => {
       return !!availabilityPlan;
     case PHOTOS:
       return images && images.length > 0;
+    case DIFFICULTY:
+      return publicData && publicData.difficulty;
     default:
       return false;
   }

@@ -52,7 +52,7 @@ export class SearchPageComponent extends Component {
   }
 
   filters() {
-    const { categories, amenities, priceFilterConfig, dateRangeFilterConfig } = this.props;
+    const { categories, amenities, priceFilterConfig, dateRangeFilterConfig, difficulty } = this.props;
 
     // Note: "category" and "amenities" filters are not actually filtering anything by default.
     // Currently, if you want to use them, we need to manually configure them to be available
@@ -75,6 +75,10 @@ export class SearchPageComponent extends Component {
       dateRangeFilter: {
         paramName: 'dates',
         config: dateRangeFilterConfig,
+      },
+      difficultyFilter: {
+        paramName: 'pub_difficulty',
+        options: difficulty,
       },
     };
   }
@@ -218,6 +222,7 @@ export class SearchPageComponent extends Component {
             primaryFilters={{
               categoryFilter: filters.categoryFilter,
               amenitiesFilter: filters.amenitiesFilter,
+              difficultyFilter: filters.difficultyFilter,
               priceFilter: filters.priceFilter,
               dateRangeFilter: filters.dateRangeFilter,
             }}
@@ -265,12 +270,14 @@ SearchPageComponent.defaultProps = {
   tab: 'listings',
   categories: config.custom.categories,
   amenities: config.custom.amenities,
+  difficulty: config.custom.difficulty,
   priceFilterConfig: config.custom.priceFilterConfig,
   dateRangeFilterConfig: config.custom.dateRangeFilterConfig,
   activeListingId: null,
 };
 
 SearchPageComponent.propTypes = {
+  difficultyOptions: array,
   listings: array,
   mapListings: array,
   onActivateListing: func.isRequired,

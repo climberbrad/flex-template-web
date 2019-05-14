@@ -43,4 +43,11 @@ export default [
       bounds: new LatLngBounds(new LatLng(66.16997, 29.16773), new LatLng(66.16095, 29.13572)),
     },
   },
+  {
+    id: 'default-colorado',
+    predictionPlace: {
+      address: 'Vail, Colorado',
+      bounds: new LatLngBounds(new LatLng(39.641107, -106.375712), new LatLng(39.640107, -106.365712)),
+    },
+  },
 ];

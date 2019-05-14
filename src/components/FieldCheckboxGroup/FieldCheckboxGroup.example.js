@@ -8,42 +8,34 @@ import { requiredFieldArrayCheckbox } from '../../util/validators';
 const formName = 'Styleguide.FieldCheckboxGroup';
 const formNameRequired = 'Styleguide.FieldCheckboxGroupRequired';
 
-const label = <h3>Amenities</h3>;
+const label = <h3>Duration</h3>;
 
 const commonProps = {
   label: label,
   options: [
     {
-      key: 'towels',
-      label: 'Towels',
+      key: '1_hr',
+      label: 'One Hour',
     },
     {
-      key: 'bathroom',
-      label: 'Bathroom',
+      key: '2_hr',
+      label: 'Two Hours',
     },
     {
-      key: 'swimming_pool',
-      label: 'Swimming pool',
+      key: '3_hr',
+      label: 'Three Hours',
     },
     {
-      key: 'own_drinks',
-      label: 'Own drinks allowed',
+      key: '4_hr',
+      label: 'Four Hours',
     },
     {
-      key: 'jacuzzi',
-      label: 'Jacuzzi',
+      key: 'half_day',
+      label: 'Half Day',
     },
     {
-      key: 'audiovisual_entertainment',
-      label: 'Audiovisual entertainment',
-    },
-    {
-      key: 'barbeque',
-      label: 'Barbeque',
-    },
-    {
-      key: 'own_food_allowed',
-      label: 'Own food allowed',
+      key: 'full_day',
+      label: 'Full Day',
     },
   ],
   twoColumns: true,

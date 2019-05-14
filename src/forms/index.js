@@ -8,6 +8,7 @@ export { default as EditListingPhotosForm } from './EditListingPhotosForm/EditLi
 export { default as EditListingPoliciesForm } from './EditListingPoliciesForm/EditListingPoliciesForm';
 export { default as EditListingPricingForm } from './EditListingPricingForm/EditListingPricingForm';
 export { default as EmailVerificationForm } from './EmailVerificationForm/EmailVerificationForm';
+export { default as EditListingDifficultyForm } from './EditListingDifficultyForm/EditListingDifficultyForm';
 export { default as EnquiryForm } from './EnquiryForm/EnquiryForm';
 export { default as FilterForm } from './FilterForm/FilterForm';
 export { default as LocationSearchForm } from './LocationSearchForm/LocationSearchForm';
