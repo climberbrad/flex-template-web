@@ -45,39 +45,32 @@ const AboutPage = () => {
 
             <div className={css.contentMain}>
               <h2>
-                Most of the Finnish saunas are located at the homes of individuals - indeed, most
-                people in Finland live in an apartment with sauna in it. In addition, lots of people
-                have lakeside summer cottages, which also typically come with a separate sauna
-                building near the waterfront.
+                We offer true adventure, a genuine and personal odyssey. We are passionate about making the outdoors more accessible
+                to travelers who hear the call of the wild. We create memories and experiences not found on typical travel sites and
+                beyond what traditional guiding services can offer.
               </h2>
 
               <p>
-                To truly experience a Finnish sauna, you need to look beyond the public saunas, and
-                instead visit a real home or cottage sauna. Saunatime makes this possible for
-                everyone. All our saunas are owned by individuals willing to let tourists and other
-                curious visitors to enter their sacred spaces.
+                We connect you with Locals, passionate about what they do and thrilled to share their curated experiences with you.
+                Whether you want to hike, mountain bike, ski, climb, run or love beautiful nature photography, our Locals show you
+                what “off the beaten path” truly means. They take you where only a Local can.
               </p>
-
-              <h3 className={css.subtitle}>Are you a sauna owner?</h3>
 
               <p>
-                Saunatime offers you a good way to earn some extra cash! If you're not using your
-                sauna every evening, why not rent it to other people while it's free. And even if
-                you are using your sauna every evening (we understand, it's so good), why not invite
-                other people to join you when the sauna is already warm! A shared sauna experience
-                is often a more fulfilling one.
+                Our platform is simple to use. It's easy to find the outdoor adventure fitting your experience level, interests, and schedule.
+                Unser is on demand and on your time. We are ushering in a revolution in adventure travel!
               </p>
 
-              <h3 id="contact" className={css.subtitle}>
-                Create your own marketplace like Saunatime
-              </h3>
+              <p>Unser is your portal to the outdoors, wherever adventure might take you.</p>
+
+              <h3 className={css.subtitle}>Are you a local?</h3>
+
               <p>
-                Saunatime is brought to you by the good folks at{' '}
-                <ExternalLink href="http://sharetribe.com">Sharetribe</ExternalLink>. Would you like
-                to create your own marketplace platform a bit like Saunatime? Or perhaps a mobile
-                app? With Sharetribe it's really easy. If you have a marketplace idea in mind, do
-                get in touch!
+                Unser offers you a good way to earn some extra cash! If you're an outdoor enthusiast and would like to share
+                your passion for the outdoors, sign up and create an adventure that you can share. Giving a truly authentic experience
+                to others who share your love of the outdoors is itself a fulfilling and unique experience.
               </p>
+
               <p>
                 You can also checkout our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
