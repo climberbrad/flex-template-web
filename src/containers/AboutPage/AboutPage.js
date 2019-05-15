@@ -40,7 +40,7 @@ const AboutPage = () => {
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>Why pay exorbitant fees tp a service when you can get a guided tour from a local!</p>
+              <p>Why pay exorbitant fees to a guide service when you can get a local!</p>
             </div>
 
             <div className={css.contentMain}>
